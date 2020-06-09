@@ -123,7 +123,7 @@ class Trumbowyg extends Component {
 
   render() {
     return (
-      <div id={`${this.props.id}`} placeholder={this.props.placeholder}></div>
+      <textarea id={`${this.props.id}`} placeholder={this.props.placeholder}></textarea>
     )
   }
 }
