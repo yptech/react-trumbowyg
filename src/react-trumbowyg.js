@@ -123,7 +123,7 @@ class Trumbowyg extends Component {
 
   render() {
     return (
-      <textarea id={`${this.props.id}`} placeholder={this.props.placeholder}></textarea>
+      <textarea id={`${this.props.id}`} name={this.props.name} placeholder={this.props.placeholder}></textarea>
     )
   }
 }
@@ -155,6 +155,8 @@ Trumbowyg.defaultProps = {
 
 Trumbowyg.propTypes = {
   id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  lang: PropTypes.string,
   data: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   buttons: PropTypes.array,
